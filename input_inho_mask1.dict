@@ -1,0 +1,117 @@
+######################## make dataset #################################
+
+modelb = 0
+iter = 4
+name_data_folder = /home/bcostanza/soft/data/
+
+name_train1 = dataset_train_r01_planck1_mask1.tfrecords
+name_valid1 = dataset_valid_r01_planck1_mask1.tfrecords
+name_test_noise1 = dataset_test_r01_planck1_mask1.npy
+
+name_train2 = dataset_train_r01_planck1_mask1_res1.tfrecords
+name_valid2 = dataset_valid_r01_planck1_mask1_res1.tfrecords
+name_test_noise2 = dataset_test_r01_planck1_mask1_res1.npy
+
+name_train3 = dataset_train_r01_planck1_mask1_res2.tfrecords
+name_valid3 = dataset_valid_r01_planck1_mask1_res2.tfrecords
+name_test_noise3 = dataset_test_r01_planck1_mask1_res2.npy
+
+name_train4 = dataset_train_r01_planck1_mask1_res3.tfrecords
+name_valid4 = dataset_valid_r01_planck1_mask1_res3.tfrecords
+name_test_noise4 = dataset_test_r01_planck1_mask1_res3.npy
+
+name_train5 = dataset_train_r01_planck1_mask1_res4.tfrecords
+name_valid5 = dataset_valid_r01_planck1_mask1_res4.tfrecords
+name_test_noise5 = dataset_test_r01_planck1_mask1_res4.npy
+
+name_trainb = dataset_train_r01_planck1_mask1_bdata.tfrecords
+name_validb = dataset_valid_r01_planck1_mask1_bdata.tfrecords
+name_test_noiseb = dataset_test_r01_planck1_mask1_bdata.npy
+
+name_test_noiseless = dataset_test_noiseless_r01_planck1_mask1.npy
+
+
+nsims_train = 5000
+nsims_valid = 1000
+nsims_test = 10
+
+npad = 256
+npixels = 256
+Lsize = 20
+mask = 0
+
+################# networks ####################################
+name_result_folder = /home/bcostanza/soft/results/mask1/
+
+factor1 = 0.23101459662555687
+factor2 = 1.4934063289079644
+factor3 = 2.1341465392589236
+factor4 = 2.225170141352581
+factor5 = 2.7078199377070233
+factorb = 2.5093405995359563
+factore = 0.16460073685016466
+
+name_model1 = CNN_filters0_16_filters1_16_filters2_16_lr_3.36e-05_mask1.h5
+name_model2 = CNN_res1_filters0_16_filters1_16_filters2_16_lr_3.36e-05_mask1.h5
+name_model3 = CNN_res2_filters0_16_filters1_16_filters2_16_lr_3.36e-05_mask1.h5
+name_model4 = CNN_res3_filters0_16_filters1_16_filters2_16_lr_3.36e-05_mask1.h5
+name_model5 = CNN_res4_filters0_16_filters1_16_filters2_16_lr_3.36e-05_mask1.h5
+name_modelb = CNN_bdata_filters0_16_filters1_16_filters2_16_lr_3.36e-05_mask1.h5
+
+name_loss1 = filters0_16_filters1_16_filters2_16_lr_3.360e-05_mask1.csv
+name_loss2 = res1_filters0_16_filters1_16_filters2_16_lr_3.360e-05_mask1.csv
+name_loss3 = res2_filters0_16_filters1_16_filters2_16_lr_3.360e-05_mask1.csv
+name_loss4 = res3_filters0_16_filters1_16_filters2_16_lr_3.360e-05_mask1.csv
+name_loss5 = res4_filters0_16_filters1_16_filters2_16_lr_3.360e-05_mask1.csv
+name_lossb = bdata_filters0_16_filters1_16_filters2_16_lr_3.360e-05_mask1.csv
+
+name_result_cnn1 = result_filters0_16_filters1_16_filters2_16_lr_3.36e-05_mask1.npy
+name_result_cnn2 = result_res1_filters0_16_filters1_16_filters2_16_lr_3.36e-05_mask1.npy
+name_result_cnn3 = result_res2_filters0_16_filters1_16_filters2_16_lr_3.36e-05_mask1.npy
+name_result_cnn4 = result_res3_filters0_16_filters1_16_filters2_16_lr_3.36e-05_mask1.npy
+name_result_cnn5 = result_res4_filters0_16_filters1_16_filters2_16_lr_3.36e-05_mask1.npy
+name_result_cnnb = result_bdata_filters0_16_filters1_16_filters2_16_lr_3.36e-05_mask1.npy
+
+name_path = filters0_16_filters1_16_filters2_16_lr_3.360e-05.ckpt
+
+filters0 = 16
+filters1 = 16
+filters2 = 16
+filters3 = 32
+filters4 = 32
+filters5 = 32
+epochs = 100
+initial_epoch = 0
+seed = 44
+batch_size = 8
+learning_rate = 3.360047269309263e-05
+
+################### power_spectrum #####################################
+
+
+namequ_file_bl_e = noise_bias_100_emap_planck1_mask1_modelqu.npy
+namequ_file_bl_b = noise_bias_100_bmap_planck1_mask1_modelqu.npy
+
+nameb_file_bl_e = noise_bias_100_emap_planck1_mask1_modelb.npy
+nameb_file_bl_b = noise_bias_100_bmap_planck1_mask1_modelb.npy
+
+namequ_fisher_mean_e = fisher_matrix_2000_emap_planck1_mask1_modelqu
+namequ_fisher_mean_b = fisher_matrix_2000_bmap_planck1_mask1_modelqu
+
+nameb_fisher_mean_e = fisher_matrix_2000_emap_planck1_mask1_modelb
+nameb_fisher_mean_b = fisher_matrix_2000_bmap_planck1_mask1_modelb
+
+namequ_fisher_array_e = matrices_fisher_2000_emap_planck1_mask1_modelqu
+namequ_fisher_array_b = matrices_fisher_2000_bmap_planck1_mask1_modelqu
+
+nameb_fisher_array_e = matrices_fisher_2000_emap_planck1_mask1_modelb
+nameb_fisher_array_b = matrices_fisher_2000_bmap_planck1_mask1_modelb
+
+
+nsamples_bias = 100
+nsamples_fisher = 2000
+
+lmin = 2
+lmax = 2400
+nbins = 25
+
