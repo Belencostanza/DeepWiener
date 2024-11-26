@@ -5,15 +5,12 @@ Neural network to simulate the Wiener Filter (WF) for Cosmic Microwave Backgroun
 # Description of the codes: 
 
 Brief overview of the codes inclued in ``source`:
--``CG_inho.py``: Conjugate Gradient algorithm for Wiener Filter calculation. 
-
-
-
--``wf_noise.py``: Module used to generate flat sky maps with Nifty7.
--``make_dataset.py``: Module that creates the dataset for each iteration.
--``losses.py``: Module with the loss functions used to train the neural network. 
--``train_functions.py``: DeepWiener neural network and training.
--``PowerSpectrum.py``: Module to estimate the noise bias term and fisher matrix of the power spectrum.
+- ``CG_inho.py``: Conjugate Gradient algorithm for Wiener Filter calculation.
+- ``wf_noise.py``: Module used to generate flat sky maps with Nifty7.
+- ``make_dataset.py``: Module that creates the dataset for each iteration.
+- ``losses.py``: Module with the loss functions used to train the neural network. 
+- ``train_functions.py``: DeepWiener neural network and training.
+- ``PowerSpectrum.py``: Module to estimate the noise bias term and fisher matrix of the power spectrum.
 
 # Requirements: 
 
