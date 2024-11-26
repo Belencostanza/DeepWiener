@@ -2,11 +2,13 @@
 Neural network to simulate the Wiener Filter (WF) for Cosmic Microwave Background (CMB) polarization maps with inhomogeneous noise applied. In addition, the power spectrum estimation algorithm is included 
 
 
-# Description
+# Description of the codes: 
 
 Brief overview of the codes inclued in ``source`:
-
 -``CG_inho.py``: Conjugate Gradient algorithm for Wiener Filter calculation. 
+
+
+
 -``wf_noise.py``: Module used to generate flat sky maps with Nifty7.
 -``make_dataset.py``: Module that creates the dataset for each iteration.
 -``losses.py``: Module with the loss functions used to train the neural network. 
@@ -18,6 +20,7 @@ Brief overview of the codes inclued in ``source`:
 - Tensorflow 2.X
 - CAMB
 - Nifty7
+
 
 # Usage: 
 
@@ -43,11 +46,11 @@ The dictionary input include these parameters:
 
 To run the software: 
 
-- Edit the input dictionary ``input_inho_mask.dict`` with the desired example.
-- Run ``run_dataset.py /path/input_inho_mask.dict`` to create the dataset.
-- Run ``train_functions.py /path/input_inho_mask.dict`` to train the neural network.
-- Run ``eval_model.py /path/input_inho_mask.dict`` to evaluate the trained models and obtain the WF predictions.
-- Run ``fisher_and_noise_bias.py /path/input_inho_mask.dict`` to calculate the noise bias and the fisher matrix for the power spectrum estimation.
+1. Edit the input dictionary ``input_inho_mask.dict`` with the desired example.
+2. Run ``run_dataset.py /path/input_inho_mask.dict`` to create the dataset.
+3. Run ``train_functions.py /path/input_inho_mask.dict`` to train the neural network.
+4. Run ``eval_model.py /path/input_inho_mask.dict`` to evaluate the trained models and obtain the WF predictions.
+5. Run ``fisher_and_noise_bias.py /path/input_inho_mask.dict`` to calculate the noise bias and the fisher matrix for the power spectrum estimation.
 
 # Contact 
 
