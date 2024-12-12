@@ -33,7 +33,7 @@ The dictionary input include these parameters:
 - ``mask``: put equal to 0 if the Mask1 is used, put equal to 1 if the Mask2 is used.
 - ``name_result_folder``: path where the results are stored.
 - ``factor``: normalization factor for the dataset in each iteration.
-- ``name_model``: name of the models that will be saved in the results folder in (.h5 format).
+- ``name_model``: name of the models that will be saved in the results folder in .h5 format.
 - ``name_path``: checkpoints name.
 - ``filters``: number of filters used for the convolution in each layer.
 - ``namequ_file_bl``, ``nameb_file_bl``: name of the noise bias calculated with ``PowerSpectrum.py``, for models trained with J(Q,U) and J(B), that will be saved in the results folder.
