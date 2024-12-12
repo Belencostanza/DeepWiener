@@ -15,13 +15,13 @@ Brief overview of the codes inclued in ``source``:
 # Requirements: 
 
 - Tensorflow 2.X
-- CAMB
-- Nifty7
+- CAMB (https://camb.readthedocs.io/en/latest/index.html)
+- Nifty7 (https://ift.pages.mpcdf.de/nifty/user/index.html)
 
 
 # Usage: 
 
-The implemented codes here perform the WF reconstruction of CMB polarization maps with inhomogeneous noise applied. The inhomogeneous noise is presented by a variance map extracted from Planck. Two masks are presented with different fraction of sky. 
+The implemented codes here perform the WF reconstruction of CMB polarization maps with inhomogeneous noise applied. The inhomogeneous noise is presented by a variance map extracted from Planck. Two masks are presented with different sky fraction. 
 
 The dictionary input include these parameters:
 
