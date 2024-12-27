@@ -1,5 +1,7 @@
 # DeepWiener
-Neural network to simulate the Wiener Filter (WF) for Cosmic Microwave Background (CMB) polarization maps with inhomogeneous noise applied. In addition, the power spectrum estimation algorithm is included 
+Neural network to simulate the Wiener Filter (WF) for Cosmic Microwave Background (CMB) polarization maps with inhomogeneous noise applied. In addition, the power spectrum estimation algorithm is included.
+
+See the results in the article: https://arxiv.org/abs/2412.10580
 
 
 # Description of the codes: 
